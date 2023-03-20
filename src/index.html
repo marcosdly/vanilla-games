@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head lang="en-US">
+  <!-- FONT FAMILYS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+    rel="stylesheet"
+  />
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <!-- <script src="index.js" type="text/javascript" defer></script> -->
+  <!-- to be filled with script and stylesheet by webpack -->
+  <title>Vanilla Games</title>
+</head>
+
+<body>
+  <nav class="website-info">
+    <h1 class="website-info-title">Vanilla Games</h1>
+    <div class="website-info-pages">
+      <a href="#" class="website-info-about website-info-option">About</a>
+    </div>
+  </nav>
+  <nav class="game-selection">
+    <a href="#" class="game-checkers game-option">Checkers</a>
+    <a href="#" class="game-chess game-option">Chess</a>
+    <a href="#" class="game-sudoku game-option">Sudoku</a>
+    <a href="#" class="game-2048 game-option">2048</a>
+  </nav>
+  <main>
+    <div class="saving-game-container" style="display: none">
+      <img src="#" alt="game saving icon" class="saving-game-icon" />
+      <label for="saving-game-progress"
+        >Saving game state, please wait...</label
+      >
+      <progress id="saving-game-progress" value="0" max="100"></progress>
+    </div>
+    <div class="game-container"></div>
+  </main>
+</body>

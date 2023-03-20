@@ -1,0 +1,16 @@
+.game-selection {
+  width: var(--game-selection-navbar-width);
+  /* STUDY study measurement units */
+  height: calc(100vh - var(--website-info-navbar-height));
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background-color: #ffc;
+}
+
+.game-option {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+}

@@ -1,0 +1,38 @@
+:root {
+  --website-info-navbar-height: 4.5rem;
+  --game-selection-navbar-width: 15ch; 
+  /* --game-selection-navbar-height: calc(100% - var(--website-info-navbar-height)) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* same as setting to 63.5% if the defuault font-size
+     is 16px */
+  font-size: 10px;
+}
+
+a:link, /* unvisited link */
+a:visited, /* visited link */
+a:link:active, /* unvisited link, holding click */
+a:visited:active, /* visited link, holding click */
+a:hover {
+  /* hovering cursor over */
+  color: unset;
+  text-decoration: unset;
+  cursor: auto;
+}
+
+main {
+  background-color: white;
+  width: calc(100vw - var(--game-selection-navbar-width));
+  height: calc(100vh - var(--website-info-navbar-height));
+  left: var(--game-selection-navbar-width);
+  top: var(--website-info-navbar-height);
+  /* STUDY position */
+  position: absolute;
+  box-shadow: inset 2px 2px 10px -1px gray;
+}
